@@ -1,0 +1,46 @@
+*
+body{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header {
+    grid-area: header;
+    background-color: rgb(68, 160, 160);
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 250px;
+    background-color: rgb(145, 252, 241);
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+.menu .card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.general {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    "header header"
+    "menu central";
+  gap: 10px;
+  padding: 10px;
+  height: 100vh;
+  box-sizing: border-box;
+}
+.central {
+  grid-area: central;
+  background-color: #27a3ae;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-items: flex-start;
+  align-items: center;
+}
+
