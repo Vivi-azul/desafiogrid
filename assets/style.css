@@ -29,18 +29,22 @@ header {
     "header header"
     "menu central";
   gap: 10px;
-  padding: 10px;
   height: 100vh;
   box-sizing: border-box;
 }
 .central {
   grid-area: central;
-  background-color: #27a3ae;
+  background-color: rgb(145, 252, 241);
   padding: 10px;
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
   justify-items: flex-start;
   align-items: center;
+}
+.central .card{
+    border:2px black solid;
+    padding: 10px;
+    background-color: antiquewhite;
 }
 
